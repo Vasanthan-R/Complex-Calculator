@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Complex Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center>
+	<h1>Complex Calculator using Web Service</h1>
+	<br><br>
+        <form action="/send" method="post">
+            Number 1 : <input type="text" name="m1" id="m1"><br><br>
+            Number 2 : <input type="text" name="m2" id="m2"><br><br>
+
+        <input type="radio" name="r" value="Addition">Add
+        <input type="radio" name="r" value="Subtraction">Subtract
+        <input type="radio" name="r" value="Multiplication">Multiply
+        <input type="radio" name="r" value="Division">Divide
+        <input type="radio" name="r" value="Power">Power
+
+        <br><br><br>
+        Number : <input type="text" name="n" id="n"><br>
+        <input type="radio" name="r" value="log">Log
+       
+        <br><br>
+        Principle : <input type="text" name="n1" id="n1"><br><br>
+        Interest : <input type="text" name="n2" id="n2"><br><br>
+        Years : <input type="text" name="n3" id="n3"><br><br>
+        <input type="radio" name="r" value="interest">Simple Interest
+
+        <br><br>
+        <input type="submit" value="Calculate" name="sub">
+	<br><br>
+	<button type="button" onclick="ClearFields();">Clear</button>
+
+        </form>
+    </center>
+    <script>
+    function ClearFields() {
+
+     document.getElementById("m1").value = "";
+     document.getElementById("m2").value = "";
+     document.getElementById("n1").value = "";
+     document.getElementById("n2").value = "";
+     document.getElementById("n3").value = "";
+     document.getElementById("n").value = "";
+}
+    </script>
+    </body>
+</html>
+
+	
+	
+	
+
